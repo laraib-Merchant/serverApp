@@ -19,8 +19,9 @@ app.get("/", (req, res) => {
 //get request from http://localhost:3000/name/:myName
 
 app.get("/name/:myName", (req, res) => {
-    console.log("🚀 ~ file: server.mjs:7 ~ app.get ~ req:" + req);
+
     const name = req.params.myName;
+    console.log("🚀 ~ file: server.mjs:7 ~ app.get ~ req:" + name);
     res.send({message: `Hello World!, by ${name}`});
 });
 
